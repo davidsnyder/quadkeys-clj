@@ -1,0 +1,39 @@
+h2. quadkeys-clj
+
+Functions to convert WGS-84 Latitude/Longitude pairs into Quadkeys at a zoom level in 1-23
+
+Adapted from the discussion at http://msdn.microsoft.com/en-us/library/bb259689.aspx
+
+h3. Usage
+
+This project is built with "Leiningen":http://github.com/technomancy/leiningen.
+
+
+Given a file containing tab-separated latitude/longitude pairs, emits the input pair with an appended quadkey (the main function currently uses zoom level 11).
+
+#Example file in test/quadkeys/coordinates.tsv
+<pre><code>
+-90.242608	38.604001
+-90.212338	38.635538
+-80.22258	36.109978
+-78.905379	36.001676
+-79.465736	35.722965
+</code></pre>
+
+<pre><code>
+lein run test/quadkeys/coordinates.tsv
+</code></pre>
+
+<pre><code>
+-90.242608	38.604001	32233233211
+-90.212338	38.635538	32233233211
+-80.22258	36.109978	32211201103
+-78.905379	36.001676	32033223100
+-79.465736	35.722965	32211003013
+</code></pre>
+
+There are also a few assertion tests.
+
+<pre><code>
+lein test
+</code></pre>
