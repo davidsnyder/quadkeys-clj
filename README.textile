@@ -1,8 +1,8 @@
 h2. quadkeys-clj
 
-Functions to convert WGS-84 Latitude/Longitude pairs into Quadkeys at a zoom level in 1-23
+Functions to convert WGS-84 latitude/longitude pairs into quadkeys at a zoom level in 1-23.
 
-Adapted from the discussion at "http://msdn.microsoft.com/en-us/library/bb259689.aspx":http://msdn.microsoft.com/en-us/library/bb259689.aspx
+Adapted from the discussion at "http://msdn.microsoft.com/en-us/library/bb259689.aspx":http://msdn.microsoft.com/en-us/library/bb259689.aspx.
 
 h3. Usage
 
